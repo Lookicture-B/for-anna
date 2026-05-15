@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Secret For Anna</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0b0c10;
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                              radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px);
+            background-size: 550px 550px, 350px 350px;
+            background-position: 0 0, 40px 60px;
+            animation: move-twinkle 200s linear infinite;
+        }
+
+        @keyframes move-twinkle {
+            from { background-position: 0 0, 40px 60px; }
+            to { background-position: -1000px 1000px, -600px 1200px; }
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 50px 40px;
+            border-radius: 16px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #FFD700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #c5c6c7;
+            margin-bottom: 40px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF6B6B, #FF1493);
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(255, 20, 147, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 20, 147, 0.6);
+        }
+
+        .tip {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Anna酱 o(>ω< )o</h1>
+        <p>这里藏着一份跨越了时光、专门为你定制的生日秘密。<br>点击下方按钮，把它下载到你的电脑里解开吧。</p>
+        
+        <a href="birthday_gift.zip" class="download-btn" download>解锁生日秘密 🎁</a>
+        
+        <div class="tip">
+            💡小提示：下载后请先【解压整个压缩包】，再双击里面的 birthday_gift.exe 开启魔法。
+        </div>
+    </div>
+
+</body>
+</html>
